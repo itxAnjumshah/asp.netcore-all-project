@@ -1,0 +1,96 @@
+@model codefirstapproch.Models.Student
+
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+<!-- Page Title -->
+<h2 class="text-center mb-4">➕ Create New Student</h2>
+
+<div class="container">
+
+    <!-- Center card -->
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <!-- Card design -->
+            <div class="card shadow-lg border-0 rounded-3">
+
+                <div class="card-header bg-primary text-white text-center">
+                    <h4 class="mb-0">Student Information Form</h4>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <form asp-action="Create">
+
+                        <!-- Validation summary -->
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label asp-for="name" class="form-label"></label>
+                            <input asp-for="name" class="form-control" placeholder="Enter full name" />
+                            <span asp-validation-for="name" class="text-danger"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label asp-for="email" class="form-label"></label>
+                            <input asp-for="email" class="form-control" placeholder="Enter email address" />
+                            <span asp-validation-for="email" class="text-danger"></span>
+                        </div>
+
+                        <!-- Gender (Dropdown better than textbox) -->
+                        <div class="mb-3">
+                            <label asp-for="gender" class="form-label"></label>
+
+                            <select asp-for="gender" class="form-select">
+                                <option value="">-- Select Gender --</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+
+                            <span asp-validation-for="gender" class="text-danger"></span>
+                        </div>
+
+                        <!-- Date of Birth -->
+                        <div class="mb-3">
+                            <label asp-for="Dob" class="form-label"></label>
+                            <input asp-for="Dob" type="date" class="form-control" />
+                            <span asp-validation-for="Dob" class="text-danger"></span>
+                        </div>
+
+                        <!-- Age -->
+                        <div class="mb-3">
+                            <label asp-for="age" class="form-label"></label>
+                            <input asp-for="age" type="number" class="form-control" placeholder="Enter age" />
+                            <span asp-validation-for="age" class="text-danger"></span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-grid gap-2">
+
+                            <button type="submit" class="btn btn-success">
+                                ✔ Create Student
+                            </button>
+
+                            <a asp-action="Index" class="btn btn-secondary">
+                                ← Back to List
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
