@@ -1,0 +1,78 @@
+﻿@model MutiModelObject40.ViewModels.CourseWiseStudent
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-lg-12">
+
+            @if (Model != null && Model.CrsDetails != null)
+            {
+                <h3>Course Details</h3>
+
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Course ID</th>
+                            <th>Course Name</th>
+                            <th>Course Duration</th>
+                            <th>Course Fee</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>@Model.CrsDetails.CourseId</td>
+                            <td>@Model.CrsDetails.CourseName</td>
+                            <td>@Model.CrsDetails.CourseDuration</td>
+                            <td>@Model.CrsDetails.CourseFee</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+
+                <h3>Student List</h3>
+
+                @if (Model.StudentList != null && Model.StudentList.Count > 0)
+                {
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Date of Birth</th>
+                                <th>Phone</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in Model.StudentList)
+                            {
+                                <tr>
+                                    <td>@item.StuId</td>
+                                    <td>@item.StuName</td>
+                                    <td>@item.StuGender</td>
+                                    <td>@item.StuDob</td>
+                                    <td>@item.Stuphone</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        No students found for this course.
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="alert alert-danger">
+                    No course found.
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

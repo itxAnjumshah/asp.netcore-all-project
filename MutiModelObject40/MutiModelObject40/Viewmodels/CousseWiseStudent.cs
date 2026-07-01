@@ -1,4 +1,4 @@
-﻿using MultiModelDemo.Models;
+﻿//using MultiModelDemo.Models;
 using MutiModelObject40.Models;
 
 namespace MutiModelObject40.ViewModels

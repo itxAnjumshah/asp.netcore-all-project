@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MutiModelObject40")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4ddf346db73d39680de5c7891353a297709de08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb228fe6183a43d44e95b840374b936c9bde4a76")]
 [assembly: System.Reflection.AssemblyProductAttribute("MutiModelObject40")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MutiModelObject40")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
