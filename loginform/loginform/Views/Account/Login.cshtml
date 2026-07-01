@@ -1,0 +1,28 @@
+﻿@model LoginProject.Models.User
+
+<form method="post">
+
+    <input asp-for="Email"
+           placeholder="Email" />
+
+    <br />
+
+    <input asp-for="Password"
+           type="password"
+           placeholder="Password" />
+
+    <br />
+
+    <button type="submit">
+
+        Login
+
+    </button>
+
+</form>
+
+<h3>
+
+    @ViewBag.Message
+
+</h3>

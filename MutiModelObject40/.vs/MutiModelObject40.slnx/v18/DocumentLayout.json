@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\asp.netcore\\MutiModelObject40\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8EA219BC-5DBD-CBBD-9C77-EA46D071D6E5}|MutiModelObject40\\MutiModelObject40.csproj|d:\\asp.netcore\\mutimodelobject40\\mutimodelobject40\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EA219BC-5DBD-CBBD-9C77-EA46D071D6E5}|MutiModelObject40\\MutiModelObject40.csproj|solutionrelative:mutimodelobject40\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8EA219BC-5DBD-CBBD-9C77-EA46D071D6E5}|MutiModelObject40\\MutiModelObject40.csproj|d:\\asp.netcore\\mutimodelobject40\\mutimodelobject40\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8EA219BC-5DBD-CBBD-9C77-EA46D071D6E5}|MutiModelObject40\\MutiModelObject40.csproj|solutionrelative:mutimodelobject40\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -22,15 +26,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\asp.netcore\\MutiModelObject40\\MutiModelObject40\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MutiModelObject40\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\asp.netcore\\MutiModelObject40\\MutiModelObject40\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MutiModelObject40\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwCkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-01T07:25:45.353Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Search.cshtml",
               "DocumentMoniker": "D:\\asp.netcore\\MutiModelObject40\\MutiModelObject40\\Views\\Home\\Search.cshtml",
               "RelativeDocumentMoniker": "MutiModelObject40\\Views\\Home\\Search.cshtml",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CousseWiseStudent.cs",
               "DocumentMoniker": "D:\\asp.netcore\\MutiModelObject40\\MutiModelObject40\\Viewmodels\\CousseWiseStudent.cs",
               "RelativeDocumentMoniker": "MutiModelObject40\\Viewmodels\\CousseWiseStudent.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "MutiModelObject40\\Viewmodels\\CousseWiseStudent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T08:20:30.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T08:20:30.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\asp.netcore\\MutiModelObject40\\MutiModelObject40\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MutiModelObject40\\Controllers\\HomeController.cs",
@@ -64,8 +80,7 @@
               "RelativeToolTip": "MutiModelObject40\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAgwFQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T08:17:53.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T08:17:53.543Z"
             }
           ]
         }
