@@ -1,0 +1,160 @@
+﻿@model BindingMultiModelinSingleView.Models.SchoolViewModels
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    body {
+        background: #f4f7fc;
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,.1);
+        margin-bottom: 35px;
+    }
+
+    .card-header {
+        background: linear-gradient(90deg,#0d6efd,#0dcaf0);
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 15px 15px 0 0 !important;
+        padding: 15px;
+    }
+
+    .table thead {
+        background: #0d6efd;
+        color: white;
+    }
+
+    .table tbody tr:hover {
+        background: #eef5ff;
+        transition: .3s;
+    }
+
+    .badge-gender {
+        padding: 6px 12px;
+        border-radius: 20px;
+        color: white;
+        font-size: 13px;
+    }
+
+    .male {
+        background: #198754;
+    }
+
+    .female {
+        background: #dc3545;
+    }
+</style>
+
+<div class="container mt-5">
+
+    <!-- Student Table -->
+
+    <div class="card">
+        <div class="card-header">
+            📘 Student Information
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-bordered table-hover align-middle text-center">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Standard</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var student in Model.MYStudents)
+                    {
+                        <tr>
+                            <td>@student.id</td>
+                            <td>@student.name</td>
+
+                            <td>
+                                @if (student.Gender == "Male")
+                                {
+                                    <span class="badge-gender male">@student.Gender</span>
+                                }
+                                else
+                                {
+                                    <span class="badge-gender female">@student.Gender</span>
+                                }
+                            </td>
+
+                            <td>@student.standard</td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- Teacher Table -->
+
+    <div class="card">
+
+        <div class="card-header bg-success">
+            👨‍🏫 Teacher Information
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-bordered table-hover align-middle text-center">
+
+                <thead class="table-success">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Standard</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var teacher in Model.MYTeachers)
+                    {
+                        <tr>
+                            <td>@teacher.Id</td>
+                            <td>@teacher.Name</td>
+
+                            <td>
+                                @if (teacher.Qualification == "Male")
+                                {
+                                    <span class="badge-gender male">@teacher.Qualification</span>
+                                }
+                                else
+                                {
+                                    <span class="badge-gender female">@teacher.Qualification</span>
+                                }
+                            </td>
+
+                            <td>@teacher.salary</td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
