@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspWebApiTopic1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9ab6d95aaecbc9487a40086008f4bea54cfc38e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89dc9a94950263f100bb327c1818c09fc75b45ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspWebApiTopic1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspWebApiTopic1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
